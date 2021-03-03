@@ -1,0 +1,58 @@
+body, html {
+	box-sizing: border-box;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	background: #fff;
+	color: #000;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #333;
+	color: #fff;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+#logo {
+	height: 50px;
+	width: auto;
+	margin: 1rem;
+}
+
+#header-title {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+#navbar {
+
+}
+
+#navbar ul {
+	display: flex;	
+	justify-content: space-around;
+	list-style-type: none;
+	margin: 1rem 0;
+	padding: 0;
+	/*border: solid 1px red;*/
+}
+
+#navbar ul li {
+	/*border: solid 1px blue;*/
+	padding: 0 1rem;
+	margin-left: 1rem;
+	font-size: 1.85rem;
+}
