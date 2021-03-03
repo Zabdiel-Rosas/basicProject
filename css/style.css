@@ -26,6 +26,8 @@ img {
 	width: 100%;
 }
 
+/*Header*/
+
 #logo {
 	height: 50px;
 	width: auto;
@@ -64,6 +66,18 @@ img {
 
 #navbar ul li:hover {
 	background: #154872;
-	color: #91B6D5;
+	color: #fff;
 	border-radius: 5px;
+}
+
+/*Presentation Section*/
+main {
+	/*border: solid 1px red;*/
+	/*height: 100vh;*/
+}
+
+#presentation {
+	height: 450px;
+	background-image: url(../images/tablet-coffe.jpg);
+	background-size: cover;
 }
