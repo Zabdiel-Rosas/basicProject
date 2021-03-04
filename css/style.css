@@ -1,24 +1,35 @@
+/*Custom properties/variables*/
+
+:root {
+	--baby-blue: #3E719C;
+	--navy-blue: #154872;
+	--dark-blue: #02182F;
+	--white: #fff;
+}
+
 body, html {
 	box-sizing: border-box;
 	font-size: 10px;
 	margin: 0;
 	padding: 0;
+	line-height: 1.5;
 }
 
 body {
-	line-height: 1.5;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
-	background: #fff;
-	color: #000;
+	font-weight: 400;
+	background: var(--white);
+	color: var(--dark-blue);
 }
 
 header {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
 	align-items: center;
-	background: #3E719C;
-	color: #fff;
+	background: var(--baby-blue);
+	color: var(--white);
+	margin-bottom: 0;
 }
 
 img {
@@ -26,42 +37,51 @@ img {
 	width: 100%;
 }
 
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 1.9rem;
+}
+
 /*Header*/
 
 #logo {
-	height: 50px;
+	height: 55px;
 	width: auto;
-	margin: 1rem;
+	margin-top: 1rem;
 }
 
 #header-title {
-	font-size: 2rem;
+	display: none;
+	/*font-size: 2rem;
 	font-weight: 400;
-}
-
-#navbar {
-
+	margin-bottom: 0;*/
 }
 
 #navbar ul {
 	display: flex;	
 	justify-content: space-around;
 	list-style-type: none;
-	margin: 1rem 0;
+	margin: 0;
 	padding: 0;
-	/*border: solid 1px red;*/
 }
 
 #navbar ul li {
-	/*border: solid 1px blue;*/
 	padding: 1rem;
 	margin-left: 1rem;
-	font-size: 1.85rem;
 }
 
 .nav-link {
 	text-decoration: none;
 	color: inherit;
+	font-size: 1.7rem;
+	font-weight: 500;
 }
 
 #navbar ul li:hover {
@@ -70,14 +90,46 @@ img {
 	border-radius: 5px;
 }
 
+/*Main Section*/
+
 /*Presentation Section*/
-main {
-	/*border: solid 1px red;*/
-	/*height: 100vh;*/
-}
 
 #presentation {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	height: 450px;
+	margin: 0;
+	position: relative;
+}
+
+#presentation::before {
+	content: "";
 	background-image: url(../images/tablet-coffe.jpg);
 	background-size: cover;
+	position: absolute;
+	top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+	opacity: 0.87;
+}
+
+.p-headers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	position: relative;
+	text-align: center;
+}
+
+.p-headers h1,
+.p-headers h3,
+.p-headers p,
+.p-headers button {
+	/*border: solid 1px blue;*/
+	margin: 0;
 }
