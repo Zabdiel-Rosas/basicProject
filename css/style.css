@@ -17,7 +17,7 @@ header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background: #333;
+	background: #3E719C;
 	color: #fff;
 }
 
@@ -25,6 +25,8 @@ img {
 	display: block;
 	width: 100%;
 }
+
+/*Header*/
 
 #logo {
 	height: 50px;
@@ -52,7 +54,30 @@ img {
 
 #navbar ul li {
 	/*border: solid 1px blue;*/
-	padding: 0 1rem;
+	padding: 1rem;
 	margin-left: 1rem;
 	font-size: 1.85rem;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: inherit;
+}
+
+#navbar ul li:hover {
+	background: #154872;
+	color: #fff;
+	border-radius: 5px;
+}
+
+/*Presentation Section*/
+main {
+	/*border: solid 1px red;*/
+	/*height: 100vh;*/
+}
+
+#presentation {
+	height: 450px;
+	background-image: url(../images/tablet-coffe.jpg);
+	background-size: cover;
 }
