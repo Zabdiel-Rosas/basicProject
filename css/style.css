@@ -141,14 +141,21 @@ h3 {
 	margin-bottom: 1.8rem;
 }
 
-.p-headers h1 {
+.p-headers h1,
+.p-headers h3 {
 	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .p-headers p {
 	font-weight: 500;
 	font-style: italic;
+	background-color: rgba(62, 113, 156, 0.5);
+	color: var(--dark-blue);
+	padding: .6rem;
+	border: 5px;
 }
+
 
 #p-button {
 	border: none;
