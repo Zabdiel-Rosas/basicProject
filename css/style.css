@@ -27,7 +27,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: var(--baby-blue);
+	background: var(--navy-blue);
 	color: var(--white);
 	margin-bottom: 0;
 }
@@ -81,7 +81,7 @@ h3 {
 	text-decoration: none;
 	color: inherit;
 	font-size: 1.7rem;
-	font-weight: 500;
+	font-weight: 700;
 }
 
 #navbar ul li:hover {
@@ -101,6 +101,7 @@ h3 {
 	align-items: center;
 	height: 450px;
 	margin: 0;
+	margin-bottom: 2rem;
 	position: relative;
 }
 
@@ -132,4 +133,28 @@ h3 {
 .p-headers button {
 	/*border: solid 1px blue;*/
 	margin: 0;
+}
+
+.p-headers h1,
+.p-headers p {
+	line-height: 1.2;
+	margin-bottom: 1.8rem;
+}
+
+.p-headers h1 {
+	text-transform: uppercase;
+}
+
+.p-headers p {
+	font-weight: 500;
+	font-style: italic;
+}
+
+#p-button {
+	border: none;
+	padding: 1rem 1.9rem;
+	background: var(--navy-blue);
+	color: var(--white);
+	font-size: inherit;
+	font-weight: 500;
 }
