@@ -104,7 +104,7 @@ a {
 	align-items: center;
 	height: 450px;
 	margin: 0;
-	margin-bottom: 2rem;
+	margin-bottom: 6rem;
 	position: relative;
 }
 
@@ -166,13 +166,14 @@ a {
 	background: var(--navy-blue);
 	color: var(--white);
 	font-size: inherit;
-	font-weight: 500;
+	font-weight: 700;
 }
 
 /*Products Showcase*/
 
 #products-showcase {
 	text-align: center;
+	margin-bottom: 6rem;
 
 }
 
@@ -209,7 +210,8 @@ a {
 
 /*Product Image*/
 
-.prod-container figure {
+.prod-container figure,
+.offers figure {
 	margin: 0;
 }
 
@@ -232,7 +234,7 @@ a {
 
 
 .bottom {
-	background: url(../images/subway-guy.jpg);
+	background: url(../images/smartwatch.jpg);
 	background-size: cover;
 	position: relative;
 }
@@ -254,4 +256,29 @@ a {
 	position: relative;
 	width: 45%;
 	margin-left: 2rem;
+}
+
+
+/* Offers Section */
+
+.offers {
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.offers-text {
+	margin: 2rem;
+}
+
+.offers-text h2 {
+	text-align: center;
+}
+
+.offers-text p {
+	text-align: justify;
+	font-size: 1.85rem;
+}
+
+.offers-text a {
+	color: var(--navy-blue);
 }
