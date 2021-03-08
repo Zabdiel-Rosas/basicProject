@@ -117,7 +117,7 @@ a {
     right: 0px;
     bottom: 0px;
     left: 0px;
-	opacity: 0.87;
+	opacity: 0.75;
 }
 
 .p-headers {
@@ -227,7 +227,7 @@ a {
 }
 
 .top {
-	background-image: url(../images/smartphone.jpg);
+	background-image: url(../images/subway-guy.jpg);
 	background-size: cover;
 	position: relative;
 }
@@ -281,4 +281,14 @@ a {
 
 .offers-text a {
 	color: var(--navy-blue);
+}
+
+/* Footer Section */
+
+#footer {
+	margin: 0;
+	padding: 2rem;
+	background: var(--navy-blue);
+	color: var(--white);
+	text-align: center;
 }
