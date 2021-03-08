@@ -215,13 +215,6 @@ a {
 
 /*Collections Section*/
 
-#collections {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
 .c-div {
 	display: flex;
 	flex-direction: column;
@@ -231,22 +224,22 @@ a {
 	color: var(--white);
 }
 
-.lefty {
+.top {
 	background-image: url(../images/smartphone.jpg);
 	background-size: cover;
 	position: relative;
 }
 
 
-.righty {
+.bottom {
 	background: url(../images/subway-guy.jpg);
 	background-size: cover;
 	position: relative;
 }
 
 
-.lefty::before,
-.righty::before  {
+.top::before,
+.bottom::before  {
 	content: "";
 	position: absolute;
 	top: 0;
