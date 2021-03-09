@@ -336,6 +336,8 @@ a {
 
 	.c-div-text {
 		display: block;
+		font-weight: 500;
+		font-size: 1.8rem;
 	}
 
 	.offers {
@@ -354,4 +356,11 @@ a {
 		width: 50%;
 	}
 
+	#f-text {
+		line-height: 1;
+	}
+
+	#social-networks i {
+		margin: 0 1rem;
+	}
 }
