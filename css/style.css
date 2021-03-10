@@ -68,9 +68,6 @@ a {
 
 #header-title {
 	display: none;
-	/*font-size: 2rem;
-	font-weight: 400;
-	margin-bottom: 0;*/
 }
 
 #navbar ul {
@@ -89,12 +86,6 @@ a {
 .nav-link {
 	font-size: 1.7rem;
 	font-weight: 700;
-}
-
-#navbar ul li:hover {
-	background: #154872;
-	color: #fff;
-	border-radius: 5px;
 }
 
 /*Main Section*/
@@ -157,6 +148,7 @@ a {
 .p-headers p {
 	font-weight: 500;
 	font-style: italic;
+	text-transform: capitalize;
 	background-color: rgba(62, 113, 156, 0.5);
 	padding: .6rem;
 	border: 5px;
@@ -191,7 +183,6 @@ a {
 .prod-text-container {
 	margin-top: 1rem;
 	margin-bottom: 2rem;
-	/*border: solid 1px red;*/
 }
 
 
@@ -382,6 +373,7 @@ a {
 		text-align: left;
 	}
 
+	#info h4,
 	#connect h4,
 	#shop-learn h4  {
 		text-transform: uppercase;
@@ -391,4 +383,60 @@ a {
 		margin: 0 1rem;
 	}
 
+}
+
+/* Desktop Size*/
+
+@media(min-width: 900px) {
+
+	#header-title {
+		display: inherit;
+		font-size: 2rem;
+		font-weight: 400;	
+	}
+
+	#navbar ul li:hover {
+		background: var(--white);
+		color: var(--baby-blue);
+		border-radius: 5px;
+	}
+
+	.p-headers {
+		/*border: solid 1px green;*/
+		width: 30%;
+	}
+
+	.p-headers h3,
+	.p-headers h1 {
+		color: var(--dark-blue);
+	}
+
+	.button:hover {
+		background: var(--dark-blue);
+		color: var(--white);
+		
+	}
+
+	.prod-container {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.prod-container img {
+		height: 300px;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	.prod-container .large {
+		width: 60%;		
+	}
+
+	.prod-container .small {
+		width: 35%;		
+	}
+
+	.disapear {
+		display: none;
+	}
 }
