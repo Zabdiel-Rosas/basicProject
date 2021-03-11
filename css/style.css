@@ -326,7 +326,7 @@ a {
 
 	.tablet-row .large,
 	.tablet-row .small {
-		/*padding: 2rem;*/
+		padding: 2rem;
 	}
 
 	.c-div div {
@@ -337,6 +337,10 @@ a {
 		display: block;
 		font-weight: 500;
 		font-size: 1.8rem;
+	}
+
+	.bottom div {
+		align-self: flex-end;
 	}
 
 	.offers {
@@ -358,7 +362,11 @@ a {
 	#footer {
 		display: flex;
 		justify-content: space-around;
-		align-items: center;
+		align-items: flex-start;
+	}
+
+	#footer section {
+		width: 30%;
 	}
 
 	#info div,
@@ -366,14 +374,7 @@ a {
 		line-height: 1rem;
 	}
 
-	#info,
-	#shop-learn {
-		text-align: left;
-	}
-
-	#info h4,
-	#connect h4,
-	#shop-learn h4  {
+	#footer h4 {
 		text-transform: uppercase;
 	}
 
@@ -419,6 +420,11 @@ a {
 		margin-bottom: 3rem;
 	}
 
+	.tablet-row .large,
+	.tablet-row .small {
+		padding: 0;
+	}
+
 	.prod-container {
 		flex-direction: row;
 		justify-content: space-around;
@@ -445,10 +451,6 @@ a {
 
 	.disapear {
 		display: none;
-	}
-
-	.bottom div {
-		align-self: flex-end;
 	}
 
 	.offers {
