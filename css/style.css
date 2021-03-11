@@ -447,12 +447,16 @@ a {
 		display: none;
 	}
 
+	.bottom div {
+		align-self: flex-end;
+	}
+
 	.offers {
 		justify-content: space-around;
 	}
 
 	.offers figure {
-		width: 60%;
+		width: 58%;
 
 	}
 
@@ -464,6 +468,7 @@ a {
 
 	.offers-text {
 		order: 1;
+		width: 37%;
 	}
 	
 }
