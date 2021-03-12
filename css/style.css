@@ -169,6 +169,10 @@ a {
 	font-weight: 700;
 }
 
+.hiden {
+	display: none;
+}
+
 /*Products Showcase*/
 
 #products-showcase {
@@ -216,10 +220,6 @@ a {
 	margin: 0;
 }
 
-.prod-container figure {
-	margin-bottom: 3rem;
-}
-
 /*Collections Section*/
 
 .c-div {
@@ -231,22 +231,22 @@ a {
 	color: var(--white);
 }
 
-.top {
+.prod-third {
 	background-image: url(../images/subway-guy.jpg);
 	background-size: cover;
 	position: relative;
 }
 
 
-.bottom {
+.prod-fourth {
 	background: url(../images/smartwatch.jpg);
 	background-size: cover;
 	position: relative;
 }
 
 
-.top::before,
-.bottom::before  {
+.prod-third::before,
+.prod-fourth::before  {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -310,6 +310,14 @@ a {
 
 /* Media Queries */
 
+@media(max-width: 500px) {
+
+	.prod-container figure {
+		margin-bottom: 3rem;
+	}
+
+}
+
 /* Tablet Size */
 
 @media(min-width: 500px) {
@@ -356,7 +364,7 @@ a {
 	}
 
 	.c-div div {
-		width: 38%;
+		width: 250px;
 	}
 
 	.c-div-text {
@@ -365,7 +373,7 @@ a {
 		font-size: 1.8rem;
 	}
 
-	.bottom div {
+	.prod-fourth div {
 		align-self: flex-end;
 	}
 
@@ -467,6 +475,30 @@ a {
 		justify-content: space-around;
 	}
 
+	.c-div-top {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 300px;
+		width: 100%;
+		color: var(--white);
+	}
+
+	.c-div-top .prod-text-container {
+		position: relative;
+		width: 277px;
+	}
+
+	.c-div-top .c-div-text {
+		display: block;
+		font-weight: 500;
+		font-size: 1.8rem;
+	}
+
+	.c-div-top .button {
+		margin-top: 2rem;
+	}
+
 	.prod-links a:hover,
 	.prod-links::after {
 		margin-right: .4rem;
@@ -491,8 +523,35 @@ a {
 		margin-bottom: 3rem;
 	}
 
+	.prod-first {
+		background-image: url(../images/phone-agenda.jpg);
+		background-size: cover;
+		position: relative;
+	}
+
+	.prod-second {
+		background-image: url(../images/apple-tablet.jpg);
+		background-size: cover;
+		position: relative;
+	}
+
+	.prod-first::before,
+	.prod-second::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(2, 24, 47, 0.5);
+	}
+
 	.disapear {
 		display: none;
+	}
+
+	.hidden {
+		display: initial;
 	}
 
 	.offers {
