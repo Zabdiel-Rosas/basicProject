@@ -184,7 +184,7 @@ a {
 /*Text Container*/
 
 .prod-text-container {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
 
@@ -214,6 +214,10 @@ a {
 .prod-container figure,
 .offers figure {
 	margin: 0;
+}
+
+.prod-container figure {
+	margin-bottom: 3rem;
 }
 
 /*Collections Section*/
@@ -409,6 +413,16 @@ a {
 /* Desktop Size*/
 
 @media(min-width: 900px) {
+
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#grid {
+		width: 95%;
+		align-self: center;
+	}
 
 	#nav-header #logo-and-title {
 		width: 200px;
