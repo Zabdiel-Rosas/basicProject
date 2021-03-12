@@ -23,15 +23,6 @@ body {
 	color: var(--dark-blue);
 }
 
-header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background: var(--navy-blue);
-	color: var(--white);
-	margin-bottom: 0;
-}
-
 img {
 	display: block;
 	width: 100%;
@@ -60,6 +51,19 @@ a {
 
 /*Header*/
 
+#nav-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--navy-blue);
+	color: var(--white);
+	margin-bottom: 0;
+}
+
+#nav-header #logo-and-title {
+	margin-bottom: .2rem;
+}
+
 #logo {
 	height: 55px;
 	width: auto;
@@ -80,6 +84,7 @@ a {
 
 #navbar ul li {
 	margin-left: 1rem;
+	padding: 1rem 0;
 }
 
 .nav-link {
@@ -305,9 +310,22 @@ a {
 
 @media(min-width: 500px) {
 
-	header {
+	#nav-header {
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-between;
+	}
+
+	#nav-header #logo-and-title {
+		margin-left: 4rem;
+		margin-bottom: 0;
+	}
+
+	#navbar {
+		margin-right: 7rem;
+	}
+
+	#navbar ul li {
+		padding: 0;
 	}
 
 	#logo {
@@ -392,6 +410,13 @@ a {
 
 @media(min-width: 900px) {
 
+	#nav-header #logo-and-title {
+		width: 200px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
 	#header-title {
 		display: inherit;
 		font-size: 2rem;
@@ -405,13 +430,7 @@ a {
 	}
 
 	.p-headers {
-		/*border: solid 1px green;*/
 		width: 30%;
-	}
-
-	.p-headers h3,
-	.p-headers h1 {
-		color: var(--dark-blue);
 	}
 
 	.button:hover {
