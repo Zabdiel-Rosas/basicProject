@@ -21,6 +21,7 @@ body {
 	font-weight: 400;
 	background: var(--white);
 	color: var(--dark-blue);
+	min-width: 360px;
 }
 
 img {
@@ -169,7 +170,7 @@ a {
 	font-weight: 700;
 }
 
-.hiden {
+.hidden {
 	display: none;
 }
 
@@ -201,7 +202,7 @@ a {
 
 .prod-text-container p {
 	font-size: 2rem;
-	margin-bottom: : 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .prod-links a {
@@ -320,7 +321,7 @@ a {
 
 /* Tablet Size */
 
-@media(min-width: 500px) {
+@media(min-width: 708px) {
 
 	#nav-header {
 		flex-direction: row;
@@ -420,7 +421,7 @@ a {
 
 /* Desktop Size*/
 
-@media(min-width: 900px) {
+@media(min-width: 1000px) {
 
 	main {
 		display: flex;
